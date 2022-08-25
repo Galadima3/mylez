@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:mylez/animated_icons.dart';
 
-
+import 'package:mylez/date_picker.dart';
 
 void main() => runApp(const MyApp());
 
@@ -15,9 +14,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.purple,
+        brightness: Brightness.dark
       ),
-      home: const AnimatedIconsX(),
+      home: const DateX(),
     );
   }
 }

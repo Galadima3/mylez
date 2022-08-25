@@ -2,6 +2,8 @@
 
 import 'package:flutter/material.dart';
 
+import 'package:mylez/constants.dart';
+
 class TextWidget extends StatefulWidget {
   const TextWidget({Key? key}) : super(key: key);
 
@@ -55,10 +57,7 @@ class _TextWidgetState extends State<TextWidget> {
                   },
                   child: Text(
                     'Post',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
+                    style: kButtonTextStyle
                   )),
             ]),
       ),
