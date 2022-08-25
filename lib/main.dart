@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mylez/Piko/welcome_screen.dart';
 
 import 'package:mylez/date_picker.dart';
 
@@ -14,10 +15,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
-        brightness: Brightness.dark
+        primarySwatch: Colors.blue,
+        brightness: Brightness.light
       ),
-      home: const DateX(),
+      home: const WelcomeScreen(),
     );
   }
 }
