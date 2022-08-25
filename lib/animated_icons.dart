@@ -26,15 +26,14 @@ class _AnimatedIconsXState extends State<AnimatedIconsX>
 
   void _iconTapped() {
     if (videoPlaying == false) {
-      setState(() {
-        _animationController.forward();
+      _animationController.forward();
         videoPlaying == true;
-      });
+      
+       
     } else {
-      setState(() {
-        _animationController.reverse();
-        videoPlaying == false; 
-      });
+       _animationController.reverse();
+        videoPlaying == false;
+        
     }
   }
 
@@ -45,7 +44,7 @@ class _AnimatedIconsXState extends State<AnimatedIconsX>
           child: GestureDetector(
             onTap: _iconTapped,
             child: AnimatedIcon(
-              icon: AnimatedIcons.play_pause,
+              icon: AnimatedIcons.close_menu,
               progress: _animationController,
               size: 150,
             ),
