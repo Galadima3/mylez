@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mylez/Piko/welcome_screen.dart';
+import 'package:mylez/slide_to_widget.dart';
 
-import 'package:mylez/date_picker.dart';
+import 'package:mylez/time_picker.dart';
 
 void main() => runApp(const MyApp());
 
@@ -14,11 +14,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        brightness: Brightness.light
-      ),
-      home: const WelcomeScreen(),
+      theme:
+          ThemeData(primarySwatch: Colors.blue, brightness: Brightness.light),
+      home: const SlideToWidgetX(),
     );
   }
 }
